@@ -1,0 +1,3 @@
+#!/bin/bash
+cd <%= node[:geminabox][:dir] %>
+rackup -p <%= node[:geminabox][:port] %> -o <%= node[:geminabox][:host] %> -D -P /var/run/geminabox_<%= node[:geminabox][:port] %>.pid
